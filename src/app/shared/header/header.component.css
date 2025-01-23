@@ -1,0 +1,46 @@
+/* Fijar el header más pequeño */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(135, 188, 228);
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 5px 0; /* Disminuir el padding para hacerlo más pequeño */
+    height: 100px; /* Ajusta la altura del header */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: space-between; /* Asegura que el logo y los enlaces estén a los lados */
+    padding-left: 20px; /* Espacio a la izquierda para el logo */
+    padding-right: 20px; /* Espacio a la derecha */
+  }
+  
+  /* Logo dentro del header */
+  .header .logo img {
+    max-height: 100px; /* Asegura que el logo sea más pequeño */
+    width: auto;
+  }
+  
+  /* Estilos para el nav (enlaces de navegación) */
+  .nav {
+    display: flex;
+    justify-content: space-around; /* Alinea los enlaces de manera uniforme */
+    flex-grow: 1; /* Hace que ocupe el espacio restante disponible */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #333; /* Puedes cambiar el color */
+    font-weight: bold;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+  }
+
+  
+  

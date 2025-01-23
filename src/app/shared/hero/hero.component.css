@@ -1,0 +1,25 @@
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 80px; /* Ajusta esto según la altura del header */
+    padding-bottom: 60px; /* Ajusta esto según la altura del footer */
+  }
+  .btn-primary {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+  }
+  

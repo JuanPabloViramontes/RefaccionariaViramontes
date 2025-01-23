@@ -1,0 +1,35 @@
+footer {
+    background-color: #222;
+    background-color: rgb(135, 188, 228);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  footer .footer-content a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  footer .footer-content a:hover {
+    color: #007BFF; /* Cambio de color al pasar el mouse */
+  }
+  
+  footer p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
