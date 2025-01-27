@@ -1,0 +1,11 @@
+<div class="services-container">
+    <h1 class="services-title">Nuestros Servicios</h1>
+    <div class="services-list">
+      <app-service-card 
+        *ngFor="let service of services" 
+        [service]="service" 
+        (click)="viewDetails(service)">
+      </app-service-card>
+    </div>
+  </div>
+  

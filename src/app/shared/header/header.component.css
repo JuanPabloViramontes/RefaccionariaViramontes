@@ -5,7 +5,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgb(135, 188, 228);
+    background-color: rgb(44, 62, 80); /* Azul oscuro */
     box-shadow: 0 4px 2px -2px gray;
     padding: 5px 0; /* Disminuir el padding para hacerlo más pequeño */
     height: 100px; /* Ajusta la altura del header */
@@ -32,14 +32,14 @@
   
   .nav a {
     text-decoration: none;
-    color: #333; /* Puedes cambiar el color */
+    color: #d1d9e0; /* Cambia el color al pasar el mouse */
     font-weight: bold;
     padding: 0 10px;
     transition: color 0.3s ease;
   }
   
   .nav a:hover {
-    color: #007BFF; /* Cambia el color al pasar el mouse */
+    color: #ffffff; /* Puedes cambiar el color */
   }
 
   

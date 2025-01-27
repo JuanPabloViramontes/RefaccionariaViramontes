@@ -1,0 +1,158 @@
+/* Limitar el ancho máximo de las tarjetas */
+.featured-products .card {
+    max-width: 300px; /* Define un tamaño máximo para la tarjeta */
+    margin: 0 auto; /* Centra las tarjetas */
+    height: auto; /* Permite altura dinámica */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .featured-products .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contenedor cuadrado para imágenes */
+  .featured-products .card-img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Relación cuadrada */
+    overflow: hidden;
+  }
+  
+  .featured-products .card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen */
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  
+  /* Ajustes del cuerpo de la tarjeta */
+  .featured-products .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .featured-products .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .featured-products .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+  }
+  
+  /* Espaciado entre tarjetas */
+  .featured-products .row > div {
+    margin-bottom: 1rem;
+  }
+  
+  /* Asegurar diseño responsivo */
+  @media (min-width: 768px) {
+    .featured-products .card {
+      max-width: 250px; /* Reduce tamaño en pantallas grandes */
+    }
+
+    .featured-products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tarjetas distribuidas en filas */
+        gap: 16px; /* Espaciado entre tarjetas */
+        padding: 16px;
+      }
+      
+      .card {
+        max-width: 250px; /* Limita el ancho */
+        height: 350px; /* Fija una altura consistente para todas las tarjetas */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+      
+      .card-img-container {
+        position: relative;
+        width: 100%;
+        padding-top: 100%; /* Relación cuadrada */
+        overflow: hidden;
+      }
+      
+      .card-img-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ajusta las imágenes sin recortar */
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Cambia el espacio interno */
+        padding: 0.2rem; /* Reduce el padding interno del contenedor */
+        text-align: center;
+      }
+      
+      .card-title {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .card-text {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-bottom: 1rem;
+      }
+      
+      .card button {
+        margin-top: auto; /* Asegura que el botón esté al final */
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .card button:hover {
+        background-color: #0056b3;
+      }
+      
+      @media (min-width: 768px) {
+        .card {
+          max-width: 250px; /* Ajusta el ancho en pantallas grandes */
+        }
+      }
+      
+      
+  }
+  

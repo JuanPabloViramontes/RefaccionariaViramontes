@@ -6,10 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./featured-products.component.css']
 })
 export class FeaturedProductsComponent {
-  featuredProducts = [
-    { name: 'Filtro de aceite', price: 250, image: 'assets/filtro-aceite.jpg' },
-    { name: 'Pastillas de freno', price: 800, image: 'assets/pastillas-freno.jpg' },
-    { name: 'Batería 12V', price: 1200, image: 'assets/bateria.jpg' }
+  products = [
+    { name: 'Acumuador XTREME', price: 250, image: 'assets/acumulador-XTREME.jpg' },
+    { name: 'Anticongelante verde', price: 800, image: 'assets/thor-verde.jpg' },
+    { name: 'LTH kit', price: 1200, image: 'assets/kit-LTH.jpg' },
+    { name: 'Anticongelante rosa', price: 450, image: 'assets/thor-rosa.jpg' },
+    { name: 'Acumuador XTREME', price: 250, image: 'assets/acumulador-XTREME.jpg' },
+    { name: 'Anticongelante verde', price: 800, image: 'assets/thor-verde.jpg' },
+    { name: 'LTH kit', price: 1200, image: 'assets/kit-LTH.jpg' },
+    { name: 'Anticongelante rosa', price: 450, image: 'assets/thor-rosa.jpg' },
+    { name: 'LTH kit', price: 1200, image: 'assets/kit-LTH.jpg' },
+    { name: 'Anticongelante rosa', price: 450, image: 'assets/thor-rosa.jpg' }
   ];
 }
 

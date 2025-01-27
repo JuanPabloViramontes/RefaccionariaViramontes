@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { PagesModule } from './pages/pages.module';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
+import { ServicesModule } from './services/services.module';
+import { PagesRoutingModule } from './pages/pages-routing.module';
 
 
 @Component({
@@ -9,7 +11,7 @@ import { SharedModule } from './shared/shared.module';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [SharedModule, PagesModule, RouterModule]
+  imports: [SharedModule, PagesModule, ServicesModule, RouterModule, PagesRoutingModule]
 })
 export class AppComponent {
   title = 'RefaccionariaViramontes';

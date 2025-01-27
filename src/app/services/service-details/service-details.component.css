@@ -1,0 +1,28 @@
+.service-details {
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .service-details h1 {
+    font-size: 2rem;
+    color: rgb(135, 188, 228);
+  }
+  
+  .service-details button {
+    background-color: rgb(33, 47, 61);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-details button:hover {
+    background-color: rgb(135, 188, 228);
+    color: rgb(33, 47, 61);
+  }
+  

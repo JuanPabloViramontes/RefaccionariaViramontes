@@ -1,0 +1,21 @@
+.services-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .services-title {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(135, 188, 228);
+    margin-bottom: 20px;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
