@@ -1,6 +1,18 @@
-<div class="service-card">
-    <div class="icon">{{ service.icon }}</div>
-    <h3>{{ service.name }}</h3>
-    <p>{{ service.description }}</p>
+<div class="welcome-container">
+    <div class="welcome-content">
+      <h1 class="welcome-title">
+        ¡Bienvenido a Nuestros Servicios!
+      </h1>
+      <p class="welcome-description">
+        Descubre cómo nuestros servicios pueden transformar tu negocio. Con soluciones innovadoras, estamos aquí para ayudarte a alcanzar tus objetivos.
+      </p>
+      <div class="actions">
+        <button class="explore-btn" (click)="navigateToServices()">Explora Nuestros Servicios</button>
+        <a class="learn-more-link" (click)="navigateToLearnMore()">Saber más</a>
+      </div>
+    </div>
+    <div class="welcome-image">
+      <img src="assets/images/welcome-image.jpg" alt="Servicios" />
+    </div>
   </div>
   

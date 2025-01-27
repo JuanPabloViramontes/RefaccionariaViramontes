@@ -1,6 +1,11 @@
 <div class="service-details">
+    <div class="back-button" (click)="goBack()">
+      ⬅ Volver
+    </div>
     <h1>{{ service?.name }}</h1>
     <p>{{ service?.description }}</p>
-    <button (click)="goBack()">Volver</button>
+    <div class="icon-large" [style.backgroundColor]="service?.color">
+      {{ service?.icon }}
+    </div>
   </div>
   

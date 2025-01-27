@@ -4,25 +4,28 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './pages/home/home.component';
 import { ServicesModule } from '../services/services.module';
 import { ServicesComponent } from './services/services.component';
-import { PagesRoutingModule } from './pages-routing.module';
+import { ContactComponent } from './contact/contact.component';
+import { ContactModule } from '../contact/contact.module';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    ServicesComponent
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
     SharedModule, 
     ServicesModule,
-    PagesRoutingModule
+    ContactModule
   ],
   exports: [ 
     CommonModule,
     SharedModule,
     ServicesModule,
     HomeComponent,
-    ServicesComponent
+    ServicesComponent,
+    ContactComponent
   ]
 })
 export class PagesModule {}

@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { FeaturedProductsComponent } from './featured-products/featured-products.component';
 import { UbiComponent } from './ubi/ubi.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,14 +16,15 @@ import { UbiComponent } from './ubi/ubi.component';
     UbiComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [ 
     HeaderComponent,
     FooterComponent,
     HeroComponent,
     FeaturedProductsComponent,
-    UbiComponent
+    UbiComponent,
   ]
 })
 export class SharedModule {}

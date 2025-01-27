@@ -1,21 +1,102 @@
-.service-card {
-    background-color: rgb(33, 47, 61);
+/* Contenedor principal de bienvenida */
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #2980b9, #6dd5ed);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     color: white;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .welcome-content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .welcome-title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .welcome-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ecf0f1;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out 0.5s;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .explore-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  .service-card:hover {
+  .explore-btn:hover {
+    background: #2ecc71;
+    transform: translateY(-5px);
+  }
+  
+  .learn-more-link {
+    color: #ecf0f1;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .learn-more-link:hover {
+    color: #f39c12;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .welcome-image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .welcome-image img:hover {
     transform: scale(1.05);
-    background-color: rgb(135, 188, 228);
-    color: rgb(33, 47, 61);
-  }
-  
-  .service-card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
   }
   

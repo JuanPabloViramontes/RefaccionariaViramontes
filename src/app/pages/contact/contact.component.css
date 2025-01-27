@@ -1,0 +1,13 @@
+/* En el archivo global de estilos (styles.scss) o en un archivo correspondiente */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegúrate de que el header esté encima del contenido */
+  }
+  
+  .contact-page {
+    padding-top: 80px; /* Ajusta el valor para que no quede tapado por el header */
+  }
+  

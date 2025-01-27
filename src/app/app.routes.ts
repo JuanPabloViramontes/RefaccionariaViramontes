@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ServicesComponent } from './pages/services/services.component';
 import { HomeComponent } from './pages/pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent }, // Ruta raíz (Inicio)
-  { path: 'services', component: ServicesComponent }, // Ruta para Servicios
-  { path: '**', redirectTo: '' }, // Redirección para rutas no existentes
+  { path: 'inicio', component: HomeComponent }, 
+  { path: 'services', component: ServicesComponent }, 
+  { path: 'contacto', component: ContactComponent },
+  { path: '**', redirectTo: 'inicio' }, 
 ];
 
 @NgModule({
@@ -14,4 +16,3 @@ export const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-

@@ -1,0 +1,61 @@
+/* contact-info-container estilos */
+.contact-info-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 50px; /* Ajusta este valor según la altura del footer */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .contact-info-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-info-container p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .contact-info-container a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .contact-info-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media {
+    margin-top: 20px;
+  }
+  
+  .social-media h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-media ul li {
+    margin: 10px 0;
+  }
+  
+  .social-media ul li a {
+    color: #3498db;
+  }
+  
+  .social-media ul li a:hover {
+    text-decoration: underline;
+  }
+
+
+  
+  

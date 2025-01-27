@@ -1,0 +1,16 @@
+<div class="contact-info-container">
+    <h2>Información de Contacto</h2>
+    <p><strong>Dirección:</strong> {{ contactDetails.address }}</p>
+    <p><strong>Teléfono:</strong> {{ contactDetails.phone }}</p>
+    <p><strong>Correo Electrónico:</strong> <a href="mailto:{{ contactDetails.email }}">{{ contactDetails.email }}</a></p>
+  
+    <div class="social-media">
+      <h3>Síguenos en redes sociales:</h3>
+      <ul>
+        <li *ngFor="let social of contactDetails.socialMedia">
+          <a [href]="social.link" target="_blank">{{ social.platform }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

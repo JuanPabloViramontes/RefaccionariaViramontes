@@ -1,28 +1,30 @@
 .service-details {
-    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
-    padding: 20px;
-    border-radius: 10px;
+    background: #2c3e50;
     color: white;
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
-  .service-details h1 {
-    font-size: 2rem;
+  .back-button {
     color: rgb(135, 188, 228);
-  }
-  
-  .service-details button {
-    background-color: rgb(33, 47, 61);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
   
-  .service-details button:hover {
-    background-color: rgb(135, 188, 228);
-    color: rgb(33, 47, 61);
+  .icon-large {
+    font-size: 5rem;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
   }
   

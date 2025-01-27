@@ -4,7 +4,7 @@
       <app-service-card 
         *ngFor="let service of services" 
         [service]="service" 
-        (click)="viewDetails(service)">
+        (cardClick)="viewDetails(service)">
       </app-service-card>
     </div>
   </div>
